@@ -35,6 +35,8 @@ geth --rpc --rpcport 8545 --datadir %appdata%/CoinOne --networkid 8015 --bootnod
 #### Advance
 ~~~
 geth --rpc --rpcport 8545 --port 30303 --datadir %appdata%/CoinOne --networkid 8015 --bootnodes enode://e8734cec9abf8191d3d240da1073d2b2bc019f8fbbad03af9c0edfed8db3af41d6a8607f503c0b639fece43b181288b66fbd74b7ac518e143f11b9668d034b71@192.168.1.10:30303 --rpccorsdomain "*"
+
+geth --rpc --datadir %appdata%/CoinOne --networkid 8015 --mine --minerthreads=1 --etherbase=0xd56C95A53567d2C860bD96d067016BCc1F18dfC8 --ipcdisable console --rpccorsdomain "*"
 ~~~
 
 ## Download Extension
