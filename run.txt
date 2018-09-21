@@ -4,7 +4,7 @@ geth --rpc --datadir %appdata%/CoinOne/pow/node1 --networkid 8015 --mine --miner
 
 ----
 geth --datadir %appdata%/CoinOne/pow/node2 init %appdata%/CoinOne/genesis.json
-geth --rpc --rpcport 8546 --port 30304 --datadir %appdata%/CoinOne/pow/node2 --networkid 8015 --bootnodes enode://e8734cec9abf8191d3d240da1073d2b2bc019f8fbbad03af9c0edfed8db3af41d6a8607f503c0b639fece43b181288b66fbd74b7ac518e143f11b9668d034b71@192.168.1.10:30303
+geth --rpc --rpcport 8546 --port 30304 --datadir %appdata%/CoinOne/pow/node2 --networkid 8015 --bootnodes enode://e8734cec9abf8191d3d240da1073d2b2bc019f8fbbad03af9c0edfed8db3af41d6a8607f503c0b639fece43b181288b66fbd74b7ac518e143f11b9668d034b71@192.168.1.10:30303 console
 
 
 
