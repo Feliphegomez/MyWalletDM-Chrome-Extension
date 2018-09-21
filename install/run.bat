@@ -5,5 +5,5 @@
 @cls
 
 geth --datadir %appdata%/deMedallo/node1 init %appdata%/deMedallo/genesis.json
-geth --rpc --datadir %appdata%/deMedallo/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xb1625b2E77D4aBad6D2C2f431d70b1CC38e360a3 --ipcdisable console --rpccorsdomain "*"
+geth --rpc --datadir %appdata%/deMedallo/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xe4F4F9F8B3e18E89f6682102dB46916D729aEcfe --ipcdisable console --rpccorsdomain "*"
 exit
