@@ -1,10 +1,9 @@
 @echo off
 @break off
-@title Create folder with batch but only if it doesn't already exist - D3F4ULT
+@title deMedallo RUN NODES - NODE 2
 @color 0a
 @cls
 
 geth --datadir %appdata%/deMedallo/node2 init %appdata%/deMedallo/genesis.json
-geth --rpc --rpcport 8546 --datadir %appdata%/deMedallo/node2 console --networkid 8015 --port 30304 --bootnodes enode://dace670f7b7b59dd1148562b6f398d7891767e3251f2739083cb1e34792cabec79f4af5f1eafec6132f39c0deb78e6f7947a627812222c251a1cb0d509945120@127.0.0.1:30303
-pause
+geth --rpc --rpcport 8546 --datadir %appdata%/deMedallo/node2 console --networkid 8015 --port 30305 --mine --minerthreads=1 --etherbase=0xb01233dfa41163db06cda51dc20a175a8116fd04 --bootnodes enode://c826f3adc174f674289ba837e4fb24c0f9293626fa02064a6eac7e176be73c362d9c4b817cbfca0823e308f6a4976e5e7d4048d417dc41ee5b05e1ed95a70def@127.0.0.1:30303
 exit

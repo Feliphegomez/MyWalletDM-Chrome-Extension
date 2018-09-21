@@ -1,10 +1,9 @@
 @echo off
 @break off
-@title Create folder with batch but only if it doesn't already exist - D3F4ULT
+@title deMedallo RUN NODES - NODE 1
 @color 0a
 @cls
 
 geth --datadir %appdata%/deMedallo/node1 init %appdata%/deMedallo/genesis.json
-geth --rpc --datadir %appdata%/deMedallo/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xcE24a02bfA418FA3228147D25F2CD6D48d1b1229 --ipcdisable console --rpccorsdomain "*"
-pause
+geth --rpc --datadir %appdata%/deMedallo/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xb1625b2E77D4aBad6D2C2f431d70b1CC38e360a3 --ipcdisable console --rpccorsdomain "*"
 exit

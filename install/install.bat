@@ -13,14 +13,13 @@ if not exist %myDIR% (
   if "!errorlevel!" EQU "0" (
 	xcopy data\genesis*.json %myDIR%\
     echo Intalado con exito.
+	start run.bat
   ) else (
     echo Error al instalar.
+	pause
   )
 ) else (
   echo Ya esta instalado.
+	start run.bat
 )
-pause
-
-start run.bat
-
 exit
