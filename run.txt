@@ -1,0 +1,49 @@
+geth --datadir %appdata%/CoinOne/pow/node1 init %appdata%/CoinOne/genesis.json
+geth --rpc --datadir %appdata%/CoinOne/pow/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xd56C95A53567d2C860bD96d067016BCc1F18dfC8 --ipcdisable console
+
+
+----
+geth --datadir %appdata%/CoinOne/pow/node2 init %appdata%/CoinOne/genesis.json
+geth --rpc --rpcport 8546 --port 30304 --datadir %appdata%/CoinOne/pow/node2 --networkid 8015 --bootnodes enode://e8734cec9abf8191d3d240da1073d2b2bc019f8fbbad03af9c0edfed8db3af41d6a8607f503c0b639fece43b181288b66fbd74b7ac518e143f11b9668d034b71@192.168.1.10:30303
+
+
+
+
+
+
+geth --rpc --rpcport 8420 --datadir %appdata%/CoinOne/pow/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xd56C95A53567d2C860bD96d067016BCc1F18dfC8 --ipcdisable console
+
+
+1-
+admin.addPeer("enode://e8734cec9abf8191d3d240da1073d2b2bc019f8fbbad03af9c0edfed8db3af41d6a8607f503c0b639fece43b181288b66fbd74b7ac518e143f11b9668d034b71@181.142.81.125:30303")
+
+2-
+admin.addPeer("enode://58a376dd43a5be735c52aec4c2288c7f8242cf1843dcf98b8b49e3fb5d82d54a0ec3110febf6631c3dc75eca49a10959a0c75ba4fb014ac9b256b6d9895633a2@181.142.81.125:30304")
+
+
+
+
+
+geth --rpc --rpcport 8420 --datadir %appdata%/CoinOne/pow/node1 --networkid 8015 --mine --minerthreads=1 --etherbase=0xd56C95A53567d2C860bD96d067016BCc1F18dfC8 --ipcdisable console
+0x0000000000000000000000000000000000000000
+0x0cB159875098aD4Ee77B5c3D4f6dE636C823235b
+---------------------------
+geth --rpc --networkid 1 --mine --minerthreads=1 --etherbase=0x0cB159875098aD4Ee77B5c3D4f6dE636C823235b --ipcdisable console
+
+
+
+fcaef88cff75ca1240bbefafc59790fba6d344ad77de7bc0040026d63a45c894
+
+---
+TOKEN
+0x2F481Bf8C169d59Af770749052aAC00dC4481739
+
+CROWDSALE
+0xFD1B01ad07171337DA8eD95800F277D8B8444D10
+
+BUY
+0xa6f2ae3a
+
+r TX has been broadcast to the network. This does not mean it has been mined & sent. During times of extreme volume, it may take 3+ hours to send. 1) Check your TX below. 2) If it is pending for hours or disappears, use the Check TX Status Page to replace. 3) Use ETH Gas Station to see what gas price is optimal. 4) Save your TX Hash in case you need it later: 
+0xe902f01834afc7ccd5abe630ebe5337d6e0694dca595ab671b39cbe1399ad36b
+View your transaction & Contract Address 0x44b976d3406168d18dacc9e479f009cc57b1fd3a
