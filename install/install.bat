@@ -9,17 +9,18 @@ setlocal EnableDelayedExpansion
 set myDIR=%appdata%\deMedallo
 
 if not exist %myDIR% (
-  mkdir %myDIR%
-  if "!errorlevel!" EQU "0" (
-	xcopy data\genesis*.json %myDIR%\
-    echo Intalado con exito.
-	start run.bat
-  ) else (
-    echo Error al instalar.
-	pause
-  )
+	mkdir %myDIR%
+	mkdir %myDIR%\mainnet
+	if "!errorlevel!" EQU "0" (
+		xcopy data\genesis*.json %myDIR%\
+		echo Intalado con exito.
+		start config.bat
+	) else (
+		echo Error al instalar.
+		pause
+	)
 ) else (
-  echo Ya esta instalado.
-	start run.bat
+	echo Ya esta instalado.
+	start config.bat
 )
 exit

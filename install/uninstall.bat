@@ -9,6 +9,4 @@ setlocal EnableDelayedExpansion
 set myDIR=%appdata%\deMedallo
 
 @RD /S /Q %myDIR%
-pause
-
 exit
