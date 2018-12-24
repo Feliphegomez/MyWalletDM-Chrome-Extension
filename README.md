@@ -1,6 +1,17 @@
 # MyWalletDM-Chrome-Extension
 
-## Run Server
+## Instalacion
+
+- Descargue la rama principal.
+- Descomprima en la carpeta deseada.
+- Ingrese a Google Chrome
+- Ingrese a chrome://extensions/
+- Habilite el modo desarrollador y pulse en el botón "Cargar descomprimirda".
+- Ingrese la Ruta de la carpeta donde descomprimio el archivo previamente.
+- Disfrute de su Wallet para servicios DataServix FelipheGomez.
+
+
+## Run Server ++Miner (Disabled)
 
 ### Create Genesis
 Save File Genesis in ``%appdata%/CoinOne/genesis.json``
